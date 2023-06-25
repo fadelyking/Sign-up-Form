@@ -10,37 +10,59 @@
 	</head>
 	<body>
 		<div class="container">
-			<img class="forest" src="halie-west-25xggax4bSA-unsplash.jpg" />
+			<div class="branding">
+				<img class="forest" src="halie-west-25xggax4bSA-unsplash.jpg" />
+				<img class="odin" src="odin-lined.png" />
+				<h1 class="on-image-text">ODIN</h1>
+			</div>
 			<div class="right-column">
-				<p>
-					This is not a real life online service. You need something like this to help you
-					realize your deepest dreams. <br /><br />
-					Sign up now to get started!
-				</p>
-				<form action="signup.com" method="get">
-					<fieldset>
-						<legend></legend>
-						<div class="form-container">
-							<div class="column-one">
-								<label for="first_name">First Name</label>
-								<input type="text" id="first_name" name="first_name" />
-								<label for="e-mail">Email</label>
-								<input type="email" id="e-mail" name="e-mail" />
-								<label for="pass">Password</label>
-								<input type="password" id="pass" name="password" class="error" />
+				<div class="right-form">
+					<form action="signup.com" method="get">
+						<fieldset>
+							<legend>
+								This is not a real life online service. You need something like this
+								to help you realize your deepest dreams. <br />Sign up now to get
+								started!<br /><br /><br />
+								You know you want to
+							</legend>
+
+							<div class="form-container">
+								<div class="column-one">
+									<label for="first_name">First Name</label>
+									<input type="text" id="first_name" name="first_name" required />
+									<label for="e-mail">Email</label>
+									<input type="email" id="e-mail" name="e-mail" required />
+									<label for="pass">Password</label>
+									<input
+										type="password"
+										id="pass"
+										name="password"
+										class="error"
+										required
+									/>
+								</div>
+								<div class="column-two">
+									<label for="last_name">Last Name</label>
+									<input type="text" id="last_name" name="last_name" required />
+									<label for="number">Phone Number</label>
+									<input type="tel" id="number" name="number" required />
+									<label for="pass">Confirm Password</label>
+									<input
+										type="password"
+										id="pass"
+										name="password"
+										class="error"
+										required
+									/>
+								</div>
 							</div>
-							<div class="column-two">
-								<label for="last_name">Last Name</label>
-								<input type="text" id="last_name" name="last_name" />
-								<label for="number">Phone Number</label>
-								<input type="tel" id="number" name="number" />
-								<label for="pass">Confirm Password</label>
-								<input type="password" id="pass" name="password" class="error" />
-							</div>
-						</div>
-						<button type="submit">Create Account</button>
-					</fieldset>
-				</form>
+							<button type="submit">Create Account</button>
+							<p class="below-button">
+								Already have an account? <a href="">Log in</a>
+							</p>
+						</fieldset>
+					</form>
+				</div>
 			</div>
 		</div>
 	</body>

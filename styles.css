@@ -47,43 +47,87 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: odin-font;
+    src: url(Norse-Bold.otf);
+}
+
 :root {
-    --font: 'Roboto', sans-serif;
+    
+    --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+body {
+    background-color: #E5E7EB;
+}
+
+.image-styling {
+    position: relative;
 }
 
 .container {
     display: flex;
+    height: 100vh;
 }
 
 .forest {
-    height: 950px;
-    width: auto;
+    position: relative;
+    height: 100vh;
+    flex-basis: 30%;
 }
 
-p {
-    width: 800px;
-    font-family: var(--font);
-    font-size: 2rem;
+.odin {
+    height: 20vh;
+    width: auto;
+    top: 20%;
+    left: 3%;
+    position: absolute;
 }
+
+.branding {
+    background-color: black;
+    
+}
+
+.on-image-text {
+    position: absolute;
+    font-size: 8rem;
+    color: white;
+    top: 24%;
+    left: 12%;
+    font-family: odin-font;
+}
+
+
+legend {
+    width: 700px;
+    font-family: var(--font);
+    font-size: 1.3rem;
+}
+
 
 .right-column {
+    margin: 120px 0 30px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 40px;
+    flex-basis: 70%;
+
 }
 
 
 .form-container {
+    box-shadow: 0 10px 20px -15px rgb(111, 111, 111);
+    background-color: white;
     margin-left: -40px;
-    padding-right: 150px;
+    padding: 50px 0 50px 0;
     margin-top: 120px;
     display: flex;
     gap: 30px;
     font-size: 0.9rem;
     font-family: var(--font);
-    border: 1px solid black;
-    width: 1200px;
+
 }
 
 .column-one {
@@ -96,7 +140,7 @@ p {
 }
 
 label {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="confpass"] {
@@ -105,6 +149,14 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     width: auto;
     margin-bottom: 20px;
 }
+
+input:focus {
+    border: 1px solid #2483e9;
+    box-shadow: 0 5px 10px -10px  rgb(111, 111, 111);
+    outline: none;
+}
+
+
 
 button {
     background-color: #596D48;
@@ -115,4 +167,11 @@ button {
     padding: 12px 50px 12px 50px;
     border-radius: 10px;
     margin-top: 50px;
+}
+
+.below-button {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-family: var(--font);
+    padding-bottom: 50px;
 }
