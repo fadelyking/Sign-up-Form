@@ -52,126 +52,118 @@ table {
     src: url(Norse-Bold.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 :root {
     
     --font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
-body {
-    background-color: #E5E7EB;
-}
-
-.image-styling {
+.signup-image {
+    height: 99vh;
+    width: auto;
+    margin-left: 70px;
     position: relative;
 }
+
+.credit {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
 
 .container {
     display: flex;
-    height: 100vh;
+
 }
 
-.forest {
-    position: relative;
-    height: 100vh;
-    flex-basis: 30%;
+.right-container {
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 100%;
 }
 
-.odin {
-    height: 20vh;
-    width: auto;
-    top: 20%;
-    left: 3%;
-    position: absolute;
+.right-container > p {
+    margin-top: -80px;
+    justify-items: flex-start;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+    color: #2C2E59;
 }
 
-.branding {
-    background-color: black;
-    
-}
 
-.on-image-text {
-    position: absolute;
-    font-size: 8rem;
-    color: white;
-    top: 24%;
-    left: 12%;
-    font-family: odin-font;
-}
+form {
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #7a3ffa;
+    padding: 50px;
+    border: 5px solid #A480F2;
 
+}
 
 legend {
-    width: 700px;
-    font-family: var(--font);
-    font-size: 1.3rem;
+    color: #7a3ffa;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
 }
 
+.rows {
 
-.right-column {
-    margin: 120px 0 30px 40px;
+    margin-top: 30px;
     display: flex;
+    gap: 50px;
+}
+.row-one, .row-two {
+    display: flex;
+    gap: 10px;
     flex-direction: column;
-    justify-content: center;
-    flex-basis: 70%;
-
-}
-
-
-.form-container {
-    box-shadow: 0 10px 20px -15px rgb(111, 111, 111);
-    background-color: white;
-    margin-left: -40px;
-    padding: 50px 0 50px 0;
-    margin-top: 120px;
-    display: flex;
-    gap: 30px;
-    font-size: 0.9rem;
-    font-family: var(--font);
-
-}
-
-.column-one {
-    margin-left: 40px;
-}
-
-.column-one, .column-two {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 3px;
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="confpass"] {
-    border: 1px solid #E5E7EB;
+    border: 1px solid #7a3ffa;
     height: 25px;
     width: auto;
     margin-bottom: 20px;
 }
 
+input::placeholder{
+    color: grey;
+}
+
 input:focus {
     border: 1px solid #2483e9;
-    box-shadow: 0 5px 10px -10px  rgb(111, 111, 111);
+    box-shadow: 0 5px 15px -10px  rgb(111, 111, 111);
     outline: none;
 }
 
 
-
 button {
-    background-color: #596D48;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 800;
     color: white;
-    font-weight: 700;
-    font-size: 1.1rem;
-    font-family: var(--font);
-    padding: 12px 50px 12px 50px;
+    background-color: #2C2E59;
+    padding: 12px 40px 12px 40px;
+    border: 1px solid #A480F2;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 7px;
+    margin-left: -3px;
 }
 
 .below-button {
-    margin-top: 20px;
-    font-size: 1.4rem;
-    font-family: var(--font);
-    padding-bottom: 50px;
+    margin-top: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
 }

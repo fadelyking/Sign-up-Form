@@ -3,66 +3,91 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<link rel="stylesheet" href="styles.css" />
-		<script src="app.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sign Up Form</title>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
 	</head>
 	<body>
 		<div class="container">
-			<div class="branding">
-				<img class="forest" src="halie-west-25xggax4bSA-unsplash.jpg" />
-				<img class="odin" src="odin-lined.png" />
-				<h1 class="on-image-text">ODIN</h1>
-			</div>
-			<div class="right-column">
-				<div class="right-form">
-					<form action="signup.com" method="get">
-						<fieldset>
-							<legend>
-								This is not a real life online service. You need something like this
-								to help you realize your deepest dreams. <br />Sign up now to get
-								started!<br /><br /><br />
-								You know you want to
-							</legend>
-
-							<div class="form-container">
-								<div class="column-one">
-									<label for="first_name">First Name</label>
-									<input type="text" id="first_name" name="first_name" required />
-									<label for="e-mail">Email</label>
-									<input type="email" id="e-mail" name="e-mail" required />
-									<label for="pass">Password</label>
-									<input
-										type="password"
-										id="pass"
-										name="password"
-										class="error"
-										required
-									/>
-								</div>
-								<div class="column-two">
-									<label for="last_name">Last Name</label>
-									<input type="text" id="last_name" name="last_name" required />
-									<label for="number">Phone Number</label>
-									<input type="tel" id="number" name="number" required />
-									<label for="pass">Confirm Password</label>
-									<input
-										type="password"
-										id="pass"
-										name="password"
-										class="error"
-										required
-									/>
-								</div>
-							</div>
-							<button type="submit">Create Account</button>
-							<p class="below-button">
-								Already have an account? <a href="">Log in</a>
-							</p>
-						</fieldset>
-					</form>
+			<div class="left-container">
+				<div class="banner-container">
+					<img src="Wavy_Tech-28_Single-10.jpg" alt="sign up form" class="signup-image" />
+					<p class="credit">
+						<a
+							href="https://www.freepik.com/free-vector/sign-page-abstract-concept-illustration_12291223.htm#query=personal%20information&position=8&from_view=keyword&track=ais"
+							>By vector juice</a
+						>
+					</p>
 				</div>
+			</div>
+			<div class="right-container">
+				<p>
+					This is not a real online service! You need you need something like this in your
+					life to help you realize your deepest dreams <br /><br />You <em>know </em> you
+					want to
+				</p>
+				<form action="form.com">
+					<fieldset>
+						<legend>Let's do this...</legend>
+
+						<div class="rows">
+							<div class="row-one">
+								<label for="first-name">First Name</label>
+								<input
+									type="text"
+									id="first-name"
+									name="first-name"
+									placeholder="John"
+									required
+								/>
+								<label for="phone">Phone</label>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									placeholder="392-323-12"
+									required
+								/>
+								<label for="pass">Password</label>
+								<input
+									type="password"
+									id="pass"
+									name="pass"
+									placeholder="******"
+									required
+								/>
+							</div>
+							<div class="row-two">
+								<label for="first-name">Last Name</label>
+								<input
+									type="text"
+									id="last-name"
+									name="first-name"
+									placeholder="smith"
+									required
+								/>
+								<label for="e-mail">Email</label>
+								<input
+									type="email"
+									id="e-mail"
+									name="e-mail"
+									placeholder="email@mail.com"
+									required
+								/>
+								<label for="pass">Confirm Password</label>
+								<input
+									type="password"
+									id="pass"
+									name="pass"
+									placeholder="******"
+									required
+								/>
+							</div>
+						</div>
+					</fieldset>
+					<button type="submit">Create Account</button>
+					<p class="below-button">Already have an account? <a href="">Log in</a></p>
+				</form>
 			</div>
 		</div>
 	</body>
